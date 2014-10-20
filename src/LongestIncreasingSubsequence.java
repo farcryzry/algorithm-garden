@@ -5,6 +5,8 @@ public class LongestIncreasingSubsequence {
 
     //O(n^2)
     public static int lis1(int[] data) {
+        if (data == null || data.length == 0) return 0;
+
         int[] d = new int[data.length];
         int maxLen = 1;
 
@@ -40,6 +42,8 @@ public class LongestIncreasingSubsequence {
     => 5
     */
     public static int lis2(int[] data) {
+        if (data == null || data.length == 0) return 0;
+
         int[] helper = new int[data.length];
         int k = 0;
         helper[0] = data[0];

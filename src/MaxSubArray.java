@@ -4,14 +4,14 @@
 public class MaxSubArray {
 
     // DP n
-    public static int msa1(int[] A) {
-        if (A == null || A.length == 0) return 0;
+    public static int msa1(int[] data) {
+        if (data == null || data.length == 0) return 0;
 
-        int global = A[0];
-        int local = A[0];
+        int global = data[0];
+        int local = data[0];
 
-        for (int i = 1; i < A.length; i++) {
-            local = Math.max(A[i], local + A[i]);
+        for (int i = 1; i < data.length; i++) {
+            local = Math.max(data[i], local + data[i]);
             global = Math.max(local, global);
         }
 
