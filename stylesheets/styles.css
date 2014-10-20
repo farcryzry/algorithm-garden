@@ -689,8 +689,9 @@ header p {
 #banner {
   z-index: 100;
   left: 0;
-  right: 50%;
+  //right: 50%;
   height: 50px;
+  width: 95%;
   margin-right: -382px;
   position: fixed;
   top: 115px;
@@ -748,7 +749,7 @@ header p {
 }
 #banner .fork {
   position: fixed;
-  left: 50%;
+  //left: 50%;
   margin-left: -325px;
   padding: 10px 12px;
   margin-top: 6px;
